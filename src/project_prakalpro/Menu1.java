@@ -17,14 +17,14 @@ public class Menu1 extends Project_PrakAlpro {
     private int x;
     
     public void UIM1(){
-        System.out.println("============= HARI =============");
-        System.out.println("1.  SENIN ");
-        System.out.println("2.  SELASA ");
-        System.out.println("3.  RABU ");
-        System.out.println("4.  KAMIS ");
-        System.out.println("5.  JUMAT ");
+        System.out.println("=========== HARI ==========");
+        System.out.println("1. SENIN ");
+        System.out.println("2. SELASA ");
+        System.out.println("3. RABU ");
+        System.out.println("4. KAMIS ");
+        System.out.println("5. JUMAT ");
         System.out.println("6. Kembali Ke Menu Utama");
-        System.out.println("=========================");
+        System.out.println("===========================");
     }
     
     public void PilUIM1(){
@@ -35,7 +35,7 @@ public class Menu1 extends Project_PrakAlpro {
             x = input.nextInt();
             Ulang();
                 for(int i=2; i<=x+1;i++){
-                System.out.println("========== SENIN ==========\n==========   "+i+"   ==========");
+                System.out.println("========== SENIN ==========\n==========   "+(i-1)+"   ==========");
                 for(int j=0;j<=4;j++){
                         Scanner input = new Scanner (System.in);
                         if(j==0){
@@ -62,7 +62,7 @@ public class Menu1 extends Project_PrakAlpro {
                 x = input.nextInt();
                 Ulang();
                     for(int i=8; i<=x+7;i++){
-                    System.out.println("========== SELASA ==========\n===== "+i+" =====");
+                    System.out.println("========== SELASA ==========\n==========   "+(i-7)+"   ==========");
                         for(int j=0;j<=4;j++){
                             Scanner input = new Scanner (System.in);
                             if(j==0){
@@ -89,8 +89,8 @@ public class Menu1 extends Project_PrakAlpro {
                 x = input.nextInt();
                 Ulang();
                     for(int i=14; i<=x+13;i++){
-                    System.out.println("========== RABU ==========\n===== "+i+" =====");
-                        for(int j=01;j<4;j++){
+                    System.out.println("========== RABU ==========\n==========   "+(i-13)+"   ==========");
+                        for(int j=0;j<=4+x;j++){
                             Scanner input = new Scanner (System.in);
                             if(j==0){
                                 System.out.print("Masukkan Mata Kuliah = ");
@@ -115,8 +115,8 @@ public class Menu1 extends Project_PrakAlpro {
                 System.out.print("Berapa Matkul Yang ingin Anda Inputkan (MAX 5) = ");
                 x = input.nextInt();
                 Ulang();
-                    for(int i=21; i<=x+20;i++){
-                    System.out.println("========== KAMIS ==========\n===== "+i+" =====");
+                    for(int i=20; i<=x+19;i++){
+                    System.out.println("========== KAMIS ==========\n==========   "+(i-19)+"   ==========");
                         for(int j=0;j<=4+x;j++){
                             Scanner input = new Scanner (System.in);
                             if(j==0){
@@ -142,9 +142,9 @@ public class Menu1 extends Project_PrakAlpro {
                 System.out.print("Berapa Matkul Yang ingin Anda Inputkan (MAX 5) = ");
                 x = input.nextInt();
                 Ulang();
-                    for(int i=27; i<=x+26;i++){
-                    System.out.println("========== JUMAT ==========\n===== "+i+" =====");
-                        for(int j=21;j<=20+x;j++){
+                    for(int i=26; i<=x+25;i++){
+                    System.out.println("========== JUMAT ==========\n==========   "+(i-25)+"   ==========");
+                        for(int j=0;j<=4;j++){
                             Scanner input = new Scanner (System.in);
                             if(j==0){
                                 System.out.print("Masukkan Mata Kuliah = ");
@@ -168,7 +168,6 @@ public class Menu1 extends Project_PrakAlpro {
         }else if (o==6){
 
         }else{
-            UIM1();
             PilUIM1();
         }
     }

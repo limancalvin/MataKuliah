@@ -15,15 +15,15 @@ public class Menu3 extends Project_PrakAlpro {
         for(int i=1;i<=25;i++){
             for(int j=0;j<=5;j++){
                 if(j==0){
-                    matrix[i][j]= "";
+                    matrix[i][j]= null;
                 }else if(j==1){
-                    matrix[i][j]= "";
+                    matrix[i][j]= null;
                 }else if(j==2){
-                    matrix[i][j]= "";    
+                    matrix[i][j]= null;    
                 }else if(j==3){
-                    matrix[i][j]= "";
+                    matrix[i][j]= null;
                 }else if(j==4){
-                    matrix[i][j]= "";
+                    matrix[i][j]= null;
                 }
             }
         }

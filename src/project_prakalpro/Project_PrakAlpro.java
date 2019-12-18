@@ -16,9 +16,9 @@ public class Project_PrakAlpro {
      */
     public static void main(String[] args) {
         // TODO code application logic here
-        MenuAwal mn = new MenuAwal();
-        mn.UI();
-        mn.PilMA();
+        MenuAwal show = new MenuAwal();
+        show.UI();
+        show.PilMA();
     }
     
 }
