@@ -4,18 +4,16 @@
  * and open the template in the editor.
  */
 package project_prakalpro;
-
 import java.util.Scanner;
-
 /**
  *
- * @author Liman
+ * @author liman
  */
-public class Menu1 extends Project_PrakAlpro {
+public class Menu2 extends Project_PrakAlpro {
     Scanner input = new Scanner (System.in);
     private int x;
     
-    public void UIM1(){
+    public void UIM2(){
         System.out.println("=========== HARI ==========");
         System.out.println("1. SENIN ");
         System.out.println("2. SELASA ");
@@ -26,10 +24,13 @@ public class Menu1 extends Project_PrakAlpro {
         System.out.println("===========================");
     }
     
-    public void PilUIM1(){
+    public void PilUIM2(){
         System.out.print("Masukkan Pilihan Hari : ");
         int o = input.nextInt();
         if(o==1){
+            if(matrix[2][0]==null){
+                System.out.println("\nMaaf Data Masih Kosong !\nSilahkan Input Data Matkul Dahulu\n");
+            }else{
             SumMatkul();
             Ulang();
             for(int i=2; i<=x+1;i++){
@@ -54,8 +55,12 @@ public class Menu1 extends Project_PrakAlpro {
                         System.out.println();
                     }
                 }
+            }                
             }
         }else if(o==2){
+            if(matrix[2][0]==null){
+                System.out.println("\nMaaf Data Masih Kosong !\nSilahkan Input Data Matkul Dahulu\n");
+            }else{
                 SumMatkul();
                 Ulang();
                     for(int i=8; i<=x+7;i++){
@@ -81,7 +86,11 @@ public class Menu1 extends Project_PrakAlpro {
                             }
                         }
                     }
+                    }
         }else if (o==3){
+            if(matrix[2][0]==null){
+                System.out.println("\nMaaf Data Masih Kosong !\nSilahkan Input Data Matkul Dahulu\n");
+            }else{
                 SumMatkul();
                 Ulang();
                     for(int i=14; i<=x+13;i++){
@@ -107,7 +116,11 @@ public class Menu1 extends Project_PrakAlpro {
                             }
                         }
                     }
+            }
         }else if (o==4){
+            if(matrix[2][0]==null){
+                System.out.println("\nMaaf Data Masih Kosong !\nSilahkan Input Data Matkul Dahulu\n");
+            }else{
                 SumMatkul();
                 Ulang();
                     for(int i=20; i<=x+19;i++){
@@ -133,7 +146,11 @@ public class Menu1 extends Project_PrakAlpro {
                             }
                         }
                     }
+            }
         }else if (o==5){
+            if(matrix[2][0]==null){
+                System.out.println("\nMaaf Data Masih Kosong !\nSilahkan Input Data Matkul Dahulu\n");
+            }else{
                 SumMatkul();
                 Ulang();
                     for(int i=26; i<=x+25;i++){
@@ -159,10 +176,11 @@ public class Menu1 extends Project_PrakAlpro {
                             }
                         }
                     }
+            }
         }else if (o==6){
 
         }else{
-            PilUIM1();
+            PilUIM2();
         }
     }
     
@@ -177,5 +195,5 @@ public class Menu1 extends Project_PrakAlpro {
         System.out.print("Berapa Matkul Yang ingin Anda Inputkan (MAX 5) [0 = back] = ");
         x = input.nextInt();
     }
-            
+    
 }

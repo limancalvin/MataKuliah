@@ -33,15 +33,15 @@ public class MenuAwal {
             UI();
             PilMA();
         }else if(i==2){
-            Menu1 mn = new Menu1();
-            mn.UIM1();
-            mn.PilUIM1();
+            Menu2 mn = new Menu2();
+            mn.UIM2();
+            mn.PilUIM2();
             UI();
             PilMA();
         }else if (i==3){
             Menu3 mn = new Menu3();
-            mn.Clear();
-            System.out.println("DATA SUDAH TERESET !!!\n");
+            mn.UIM3();
+            mn.PilM3();
             UI();
             PilMA();
         }else if (i==4){
